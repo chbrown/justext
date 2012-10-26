@@ -6,11 +6,11 @@
 # This software is licensed as described in the file COPYING, which
 # you should have received as part of this distribution.
 
-from distutils.core import setup
+from setuptools import setup
 
 setup(
     name='justext',
-    version='1.2',
+    version='1.2.1',
     description='Heuristic based boilerplate removal tool',
     long_description='''jusText is a tool for removing boilerplate content,
     such as navigation links, headers, and footers from HTML pages. It is
@@ -19,10 +19,14 @@ setup(
     corpora.''',
     author='Jan Pomikalek',
     author_email='jan.pomikalek@gmail.com',
-    url='http://code.google.com/p/justext/',
+    url='https://github.com/chbrown/justext',
     license='BSD',
     requires=['lxml (>=2.2.4)'],
     packages=['justext'],
     package_data={'justext': ['stoplists/*.txt']},
-    scripts=['bin/justext'],
+    entry_points={
+        'console_scripts': [
+            'justext = justext:main'
+        ],
+    },
 )
