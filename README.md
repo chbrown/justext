@@ -17,11 +17,11 @@ To install the package type:
     python setup.py install
 
 Or
-  
+
     python setup.py develop
 
 Or
-  
+
     pip install git+https://github.com/chbrown/justext.git
 
 ## Basic usage:
@@ -31,3 +31,12 @@ Or
 For usage information see:
 
     justext --help
+
+## Alternatives:
+
++ Python
+    * [python-goose](https://github.com/grangier/python-goose)
+    * [decruft](https://github.com/dcramer/decruft)
++ Java
+    * [Boilerpipe](https://code.google.com/p/boilerpipe/)
+        - [Python wrapper](https://github.com/misja/python-boilerpipe)
