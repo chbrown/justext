@@ -1,5 +1,11 @@
 # jusText
 
+You probably want miso-belica's [jusText](https://github.com/miso-belica/jusText), which is far better maintained than this repository.
+
+---
+
+## Overview
+
 This is a slight patching of the original repository from [googlecode](http://code.google.com/p/justext/).
 
 The original author is [Jan Pomikalek](mailto:jan.pomikalek@gmail.com), and the site is: [code.google.com/p/justext/](http://code.google.com/p/justext/). However, I was having trouble sending his code unicode directly (it seems it assumes it always gets non-unicode), which wasn't working for my application.
